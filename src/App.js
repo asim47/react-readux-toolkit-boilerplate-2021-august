@@ -9,7 +9,7 @@ const App = (props) => {
 
 
     return (
-        <Suspense fallback={<>loading...</>}>
+        <Suspense fallback={<>loading page...</>}>
             <Switch>
                 <Route path="/" exact component={Home} />
             </Switch>
