@@ -4,8 +4,7 @@ import App from './App';
 import store from './store/store';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from "react-router-dom"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./styles/styles.scss"
+import "./styles/index.scss"
 import { ThemeProvider } from '@mui/material';
 import { themeOptions } from './theme';
 // import * as serviceWorker from './serviceWorker';
