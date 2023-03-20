@@ -6,6 +6,8 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/styles.scss"
+import { ThemeProvider } from '@mui/material';
+import { themeOptions } from './theme';
 // import * as serviceWorker from './serviceWorker';
 
 
@@ -15,8 +17,10 @@ const root = createRoot(container);
 
 root.render(
   <BrowserRouter>
-    <Provider store={store}>
-      <App />
+    <Provider store={ store }>
+      <ThemeProvider theme={ themeOptions }>
+        <App />
+      </ThemeProvider>
     </Provider>
   </BrowserRouter>
 );
